@@ -10,6 +10,9 @@ import java.util.*;
 @Log4j2
 public class DeviceRecordDAO {
 
+    /**
+     * In this class we can add the real DB connection.
+     */
     private final Map<String, List<DeviceRecord>> dynamoDb;
 
     public DeviceRecordDAO() {

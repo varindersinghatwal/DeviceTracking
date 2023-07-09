@@ -32,11 +32,23 @@ public class DeviceRecordController {
         return addDeviceInfoHandler.handleRequest(request);
     }
 
+    /**
+     * For a given device id, API retrieve the latest device information from DB and returns it.
+     *
+     * @param deviceId
+     * @return
+     */
     @GetMapping("/getDeviceInfo/{deviceId}")
     public @ResponseBody DeviceInfoResponse getDeviceInfo(@PathVariable String deviceId) {
         return getDeviceInfoHandler.getDeviceInfo(deviceId);
     }
 
+    /**
+     * For a given device id, API retrieve all the historical device information from DB and returns it.
+     *
+     * @param deviceId
+     * @return
+     */
     @GetMapping("/getDeviceInfoHistory/{deviceId}")
     public @ResponseBody DeviceInfoHistoryResponse getDeviceInfoHistory(@PathVariable String deviceId) {
         return getDeviceInfoHandler.getDeviceInfoHistory(deviceId);
