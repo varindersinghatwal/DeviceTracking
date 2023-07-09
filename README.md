@@ -25,6 +25,8 @@ Run the main method of ```TestApiUsingSDK``` class. <b>Make sure to start the se
 2. ```GetDeviceInfo``` api - This API returns the latest device information available in the storage.
 3. ```GetDeviceInfoHistory``` api - This API returns all the historical device information.
 
+Verify the service logs and test class log to verify the service functionality is working as expected.
+
 ### Data persistence
 Data can be stored in no-sql database because is semi-structure and there is no need of relational data management.
 1. Hash key should be - Device id + timestamp (time at which device information was captured).
